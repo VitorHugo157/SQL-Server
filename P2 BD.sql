@@ -1,3 +1,5 @@
+--NOME: VITOR HUGO DA SILVA VIEIRA
+
 --1) idDepto e depto do Depto que não tem usuários alocados
 SELECT d.idDepto, d.depto
 FROM [depto] d LEFT OUTER JOIN [usuario] u
