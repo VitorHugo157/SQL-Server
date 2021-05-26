@@ -25,7 +25,7 @@ PRIMARY KEY(id)
 CREATE TABLE jogador(
 codigo		INT				NOT NULL	IDENTITY(900101,1),
 nome		VARCHAR(50)		NOT NULL	UNIQUE,
-sexo		CHAR(1)			NOT NULL	DEFAULT('M') CHECK(sexo='M' OR sexo='F'),
+sexo		CHAR(1)			NULL		DEFAULT('M') CHECK(sexo='M' OR sexo='F'),
 altura		DECIMAL(4,2)	NOT NULL,
 dt_nasc		DATE			NOT NULL	CHECK(dt_nasc <= '1999-12-31'),
 qtd_premios	INT				NOT NULL,
